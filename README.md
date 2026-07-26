@@ -31,20 +31,20 @@ The analysis was built to answer questions a retail owner would actually ask:
 **Customers**
 7. Who are our most valuable customers, and how much of the business rests on them?
 8. Do customers come back, or do they buy once and disappear?
-9. Which countries and demographics generate the most value — not just the most volume?
+9. Which countries and demographics generate the most value, not just the most volume?
 
 ## What I Did
 
 Twelve SQL scripts, each covering one analysis technique:
 
-- **Database & dimension exploration** — schema, distinct dimensions, date boundaries
-- **Measures exploration** — core KPIs in a single consolidated report
-- **Magnitude & ranking analysis** — revenue by category, country, and demographic; top/bottom performers via `RANK()`
-- **Change-over-time & cumulative analysis** — yearly/monthly trends and running totals with `SUM() OVER()`
-- **Performance analysis** — year-over-year and vs-average comparisons using `LAG()` and window functions
-- **Part-to-whole analysis** — each category's share of total revenue
-- **Data segmentation** — customers bucketed into VIP / Regular / New; products into cost bands via `CASE`
-- **Customer & product reports** — two final consolidated views with derived KPIs (recency, average order value, monthly spend)
+- **Database & dimension exploration** - schema, distinct dimensions, date boundaries
+- **Measures exploration** - core KPIs in a single consolidated report
+- **Magnitude & ranking analysis** - revenue by category, country, and demographic; top/bottom performers via `RANK()`
+- **Change-over-time & cumulative analysis** - yearly/monthly trends and running totals with `SUM() OVER()`
+- **Performance analysis** - year-over-year and vs-average comparisons using `LAG()` and window functions
+- **Part-to-whole analysis** - each category's share of total revenue
+- **Data segmentation** - customers bucketed into VIP / Regular / New; products into cost bands via `CASE`
+- **Customer & product reports** - two final consolidated views with derived KPIs (recency, average order value, monthly spend)
 
 ## Key Insights
 
@@ -55,7 +55,7 @@ Bikes drive **96.5% of all revenue** ($28.3M), while Accessories (2.4%) and Clot
 Revenue jumped **+180%** (from $5.8M to $16.3M) as Accessories and Clothing scaled from 76 orders in 2012 to **24,499 orders in 2013**. Volume, not price, drove the growth.
 
 **3. Average order value collapsed as the mix shifted.**
-AOV fell from **$3,193 (2011) → $310 (2013)** — a 90% drop. The company traded a small number of high-ticket bike sales for a flood of cheap add-ons. Healthy for reach, risky for margin.
+AOV fell from **$3,193 (2011) → $310 (2013)** - a 90% drop. The company traded a small number of high-ticket bike sales for a flood of cheap add-ons. Healthy for reach, risky for margin.
 
 **4. Australia is the most valuable market per customer, not the US.**
 The US leads on total revenue ($9.16M), but Australia earns **$2,523 per customer vs the US's $1,225** — more than double, from less than half the customer base. The US looks big because it's wide, not because it's deep.
@@ -68,7 +68,7 @@ Within 2013, monthly revenue climbed steadily from $857K (Jan) to **$1.87M (Dec)
 
 ## Tools Used
 
-`SQL Server` · `T-SQL` — window functions (`SUM() OVER`, `LAG()`, `RANK()`), CTEs, `CASE` segmentation, date functions
+`SQL Server` · `T-SQL` - window functions (`SUM() OVER`, `LAG()`, `RANK()`), CTEs, `CASE` segmentation, date functions
 
 ---
 *Part of my data analytics portfolio — [balaji-167](https://github.com/balaji-167)*
