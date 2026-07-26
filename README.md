@@ -1,6 +1,6 @@
 # Exploratory Data Analysis with SQL
 
-A pure-SQL exploratory analysis of a retail sales data warehouse — no BI tool, just queries — to uncover trends, rankings, segments, and the anomalies hiding underneath the headline numbers.
+A pure-SQL exploratory analysis of a retail sales data warehouse, no BI tool, just queries to uncover trends, rankings, segments, and the anomalies hiding underneath the headline numbers.
 
 ## About the Data
 
